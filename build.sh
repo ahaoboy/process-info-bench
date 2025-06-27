@@ -1,8 +1,9 @@
 #!/bin/bash
 
 mkdir dist -p
-gcc c/main.c -O3 -o dist/gcc
-g++ c/main.c -O3 -o dist/g++
+gcc c/main.c -O3 -o -flto -s -o dist/gcc
+g++ c/main.c -O3 -o -flto -s -o dist/g++
+clang c/main.c -O3 -s -o dist/clang
 
 cargo build --release
 
