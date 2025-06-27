@@ -34,7 +34,19 @@ opt-level = 3
 codegen-units = 1
 ```
 
-
+## bench
+```bash
+hyperfine "gcc.exe" "g++.exe" "clang.exe" "rust.exe"
+```
 <div align="center">
 		<img src="assets/bench.svg">
 </div>
+
+
+## Size
+```bash
+ 43K clang.exe
+ 44K g++.exe
+ 44K gcc.exe
+271K rust.exe
+```
