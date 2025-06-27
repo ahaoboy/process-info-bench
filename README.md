@@ -34,6 +34,10 @@ opt-level = 3
 codegen-units = 1
 ```
 
+## msvc
+```bash
+cl /nologo .\c\main.c /O2 /Fo.\dist\ /Fe.\dist\msvc.exe /link /nologo /LTCG /OPT:REF /OPT:ICF
+```
 ## bench
 ```bash
 hyperfine "gcc.exe" "g++.exe" "clang.exe" "rust.exe" --warmup=1

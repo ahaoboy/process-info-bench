@@ -1,21 +1,26 @@
 [1mBenchmark [0m[1m1[0m: gcc.exe
-  Time ([1;32mmean[0m ± [32mσ[0m):     [1;32m 50.4 ms[0m ± [32m  4.0 ms[0m    [User: [34m13.0 ms[0m, System: [34m33.7 ms[0m]
-  Range ([36mmin[0m … [35mmax[0m):   [36m 45.9 ms[0m … [35m 67.6 ms[0m    [2m54 runs[0m
+  Time ([1;32mmean[0m ± [32mσ[0m):     [1;32m 50.1 ms[0m ± [32m  3.6 ms[0m    [User: [34m18.9 ms[0m, System: [34m28.6 ms[0m]
+  Range ([36mmin[0m … [35mmax[0m):   [36m 45.7 ms[0m … [35m 62.7 ms[0m    [2m53 runs[0m
  
 [1mBenchmark [0m[1m2[0m: g++.exe
-  Time ([1;32mmean[0m ± [32mσ[0m):     [1;32m 48.5 ms[0m ± [32m  2.0 ms[0m    [User: [34m16.3 ms[0m, System: [34m27.7 ms[0m]
-  Range ([36mmin[0m … [35mmax[0m):   [36m 45.4 ms[0m … [35m 54.4 ms[0m    [2m49 runs[0m
+  Time ([1;32mmean[0m ± [32mσ[0m):     [1;32m 48.1 ms[0m ± [32m  1.5 ms[0m    [User: [34m14.6 ms[0m, System: [34m29.1 ms[0m]
+  Range ([36mmin[0m … [35mmax[0m):   [36m 45.5 ms[0m … [35m 52.8 ms[0m    [2m53 runs[0m
  
 [1mBenchmark [0m[1m3[0m: clang.exe
-  Time ([1;32mmean[0m ± [32mσ[0m):     [1;32m 48.7 ms[0m ± [32m  1.7 ms[0m    [User: [34m15.6 ms[0m, System: [34m28.5 ms[0m]
-  Range ([36mmin[0m … [35mmax[0m):   [36m 45.8 ms[0m … [35m 52.9 ms[0m    [2m51 runs[0m
+  Time ([1;32mmean[0m ± [32mσ[0m):     [1;32m 48.0 ms[0m ± [32m  1.4 ms[0m    [User: [34m16.7 ms[0m, System: [34m26.5 ms[0m]
+  Range ([36mmin[0m … [35mmax[0m):   [36m 45.4 ms[0m … [35m 52.0 ms[0m    [2m53 runs[0m
  
 [1mBenchmark [0m[1m4[0m: rust.exe
-  Time ([1;32mmean[0m ± [32mσ[0m):     [1;32m 53.3 ms[0m ± [32m  2.7 ms[0m    [User: [34m14.1 ms[0m, System: [34m34.0 ms[0m]
-  Range ([36mmin[0m … [35mmax[0m):   [36m 48.7 ms[0m … [35m 65.3 ms[0m    [2m48 runs[0m
+  Time ([1;32mmean[0m ± [32mσ[0m):     [1;32m 53.4 ms[0m ± [32m  2.7 ms[0m    [User: [34m15.7 ms[0m, System: [34m32.8 ms[0m]
+  Range ([36mmin[0m … [35mmax[0m):   [36m 49.8 ms[0m … [35m 62.4 ms[0m    [2m50 runs[0m
+ 
+[1mBenchmark [0m[1m5[0m: msvc.exe
+  Time ([1;32mmean[0m ± [32mσ[0m):     [1;32m 50.8 ms[0m ± [32m  1.9 ms[0m    [User: [34m16.1 ms[0m, System: [34m31.0 ms[0m]
+  Range ([36mmin[0m … [35mmax[0m):   [36m 45.0 ms[0m … [35m 55.3 ms[0m    [2m49 runs[0m
  
 [1mSummary[0m
-  [36mg++.exe[0m ran
-[1;32m    1.00[0m ± [32m0.05[0m times faster than [35mclang.exe[0m
-[1;32m    1.04[0m ± [32m0.09[0m times faster than [35mgcc.exe[0m
-[1;32m    1.10[0m ± [32m0.07[0m times faster than [35mrust.exe[0m
+  [36mclang.exe[0m ran
+[1;32m    1.00[0m ± [32m0.04[0m times faster than [35mg++.exe[0m
+[1;32m    1.04[0m ± [32m0.08[0m times faster than [35mgcc.exe[0m
+[1;32m    1.06[0m ± [32m0.05[0m times faster than [35mmsvc.exe[0m
+[1;32m    1.11[0m ± [32m0.07[0m times faster than [35mrust.exe[0m

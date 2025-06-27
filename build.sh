@@ -8,3 +8,5 @@ clang c/main.c -O3 -s -o dist/clang
 cargo build --release
 
 cp target/release/process-info-bench dist/rust
+
+powershell -c "./build-msvc.ps1"

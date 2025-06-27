@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd dist
-hyperfine "gcc.exe" "g++.exe" "clang.exe" "rust.exe" --warmup=1
+hyperfine "gcc.exe" "g++.exe" "clang.exe" "rust.exe" "msvc.exe" --warmup=1
