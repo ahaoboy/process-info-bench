@@ -1,0 +1,18 @@
+[package]
+name = "process-info-bench"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+windows = { version = "0.61", features = [
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_Threading",
+    "Win32_Foundation",
+] }
+
+[profile.release]
+debug = false
+lto = true
+strip = true
+opt-level = 3
+codegen-units = 1
