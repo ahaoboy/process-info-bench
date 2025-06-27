@@ -36,7 +36,7 @@ codegen-units = 1
 
 ## bench
 ```bash
-hyperfine "gcc.exe" "g++.exe" "clang.exe" "rust.exe"
+hyperfine "gcc.exe" "g++.exe" "clang.exe" "rust.exe" --warmup=1
 ```
 <div align="center">
 		<img src="assets/bench.svg">
