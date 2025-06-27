@@ -32,7 +32,7 @@ int processInfo(DWORD processId, int deep)
     return deep;
   }
 
-  printf("pid: %lu, path: %s\n", processId, processPath);
+  // printf("pid: %lu, path: %s\n", processId, processPath);
 
   DWORD parentProcessId = 0;
   if (Process32First(hSnapshot, &pe32))
